@@ -87,3 +87,13 @@ def after_scenario(context, scenario):
 
 
 ```
+
+
+# Como executar:
+
+Para executar o behave, ponha em seu terminal o codigo abaixo e execute
+
+```bash
+behave
+```
+

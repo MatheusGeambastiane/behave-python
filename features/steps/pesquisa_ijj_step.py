@@ -11,11 +11,11 @@ def go_to_page(context):
     context.browser = Firefox()
     context.browser.get("https://google.com")
 
-@when("ele clicar e pesquisar o Instituto")
-def search_for_instituitio(context):
+@when("ele clicar e pesquisar o {query}")
+def search_for_instituitio(context, query):
     search_bar = context.browser.find_element(By.NAME, "q")
     search_bar.click()
-    search_bar.send_keys("instituto joga junto")
+    search_bar.send_keys(query)
     search_bar.send_keys(Keys.ENTER)
 
 @then("O titulo da pagina sera sobre o resultado da pesquisa: instituto joga junto - Pesquisa Google")
