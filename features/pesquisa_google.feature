@@ -2,7 +2,7 @@
 
 Funcionalidade: Pesquisa no google
 
-
+    @pesquisa_google
     Cenário: Pesquisar o Instituto Joga Junto
 
     Dado que o usuario esteja na pagina do google

@@ -8,7 +8,7 @@ from time import sleep
 
 @given("que o usuario esteja na pagina do google")
 def go_to_page(context):
-    context.browser = Firefox()
+    
     context.browser.get("https://google.com")
 
 @when("ele clicar e pesquisar o {query}")
